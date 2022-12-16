@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Navbar - Vanilla JavaScript</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <!--Floating contact page-->
+    <section id="contact-section">
+        <div  class="floating-contact-form"> 
+            <div class="form-container">
+                <h3>We'd love to hear from you</h3>.
+                <form action="#">
+                    <div class="field-container">
+                        <i class="fas fa-signature"></i>
+                        <label for="name" >Name</label>
+                        <input class="form-input" type="text" id="name" />
+                    </div>
+                    <div class="field-container">
+                        <i class="fas fa-envelope"></i>
+                        <label for="email" >Email</label>
+                        <input class="form-input" type="text" id="email" />
+                    </div>
+                    <div class="field-container">
+                        <i class="fas fa-sticky-note"></i>
+                        <label for="message">Message</label>
+                        <textarea class="form-input" cols="30" rows="10" id="message"></textarea>
+                    </div>
+                    <input type="submit" value="Send">
+                </form>
+            </div>
+            <div class="contact-icon">
+                <i class="fas fa-comments"></i>
+            </div>
+        </div>
+    </section>
+    <!--Scroll to top-->
+    <section id="progress-section"> 
+    <div id="progress">
+        <span id="progress-value">&#x1F815;</span>
+    </div>
+    </section>
+    <!--Header navigation-->
+    <header>
+    
+            <img class="logo" src="/images/lend_logo.png" alt="">
+        
+        <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="/faq.html">FAQ</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </header>
+     <!--Hero sections-->
+     <section  class="hero">
+        <div id="hero" class="hero-container">
+           <div class="hero-header">
+            <h1 class="hero-header-text"><span class="hero-red">Access</span> Loans <span class="hero-purple">Seamlessly</span> Online</h1>
+            <br/>
+            <p class="hero-text">We are a digital provider of loans to eligible applicants<br/> from the comfort of their devices</p>
+            <br/>
+            <button class="btn">Apply Now</button>
+           </div>
+           <div class="hero-bg-image">
+             <img src="/images/approved.svg"  alt="" height="500px" width="500px">
+           </div>
+
+        </div>
+    </section><!--End of hero section-->
+    <!--Offers-->
+    <section class="offers">
+   
+        <div class="offer-container">
+            <h1 class="offer-header">Digi Credit Offers</h1>
+            <div class="offer-card1">
+                <h1>₦5000 to ₦100,000</h1>
+                <p>15% per 30 days (month) on reducing balance</p>
+            </div>
+            <div class="offer-card2">
+                <h1>Tenor</h1>
+                <p>30 - 180 days</p>
+            </div>
+            <div class="offer-card3">
+                <h1>Processing fee</h1>
+                <p>₦500</p>
+            </div>
+        </div>
+    </section>
+    <!--We are ethical-->
+    <section class="ethical">
+        <div class="ethical-container">
+            <div class="ethical-text">
+                <h1 class="ethical-header-text">We Operate Ethically</h1>
+                <p>We operate with ethical standards. DigiLend loans are not predatory. DigiLend will not misuse your data. Our debt collection methods respect your privacy and dignity. Contact us if you have a problem with repayment.</p>
+            </div>
+            <div class="ethical-image">
+             
+            </div>
+        </div>
+    </section>
+    <!--How it works-->
+    <section class="how-it-work">
+        <h1>Our Process is Quick and Easy</h1>
+        <div class="how-it-work-container">
+            <img src="/images/how-it-work3.jpeg" alt="">
+        </div>
+    </section>
+
+    <section class="how-section">
+        <div class="how-container">
+            <div class="how-card1">
+                <h1 class="footer-header">Create an account</h1>
+                <p>You can create an account in no time to get started now.</p>
+            </div>
+            <div class="how-card2">
+                <h1 class="footer-header">Apply for a Loan</h1>
+                <p>We make your loan application process, smooth, fast and as easy as possible.</p>
+            </div>
+            <div class="how-card3">
+                <h1 class="footer-header">Get Your Cash</h1>
+                <p>Get your cash within minutes, after successful application.</p>
+            </div>
+        </div>
+    </section>
+    <!--Frequently Ask Questions-->
+    <section class="faq">
+        <div class="faq-container">
+
+        </div>
+    </section>
+
+    <!--Footer-->
+    <footer class="footer" id="contact">
+        <div class="footer-container">
+            <div class="footer-sect1">
+                <h4 class="footer-header">DigiLend</h4>
+                <p>At DigiLend we make dreams come true giving you the power you deserve when you need it.</p>
+            </div>
+            <div class="footer-sect2">
+                <h4 class="footer-header">Services</h4>
+                <ul>
+                    <li><a href="#">Personal Loans</a></li>
+                    <li><a href="#">Business Loan</a></li>
+                </ul>
+            </div>
+            <div class="footer-sect3">
+                <h4 class="footer-header">About Us</h4> 
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Use</a></li>
+                    <li><a href="#">License</a></li>
+                </ul>
+            </div>
+            <div class="footer-sect4">
+                <h4 class="footer-header">Contact Us</h4>
+                <p>Plot BN22204, off Jerome Hwande Street, Ankpa Quarters Extension, Makurdi, Benue State.</p>
+                <p>Telephone: 07012503095</p>
+                <p>Email: support@digilend.com.ng</p>
+            </div>
+        </div>
+        <div class="copy-right">
+            (c) 2022 DigiLend Multipurpose Limited. All Right Reserved.
+        </div>
+    </footer>
+    <script src="./js/main.js"></script>
+    <script src="./js/script.js"></script>
+  
+
+  
+</body>
+</html>

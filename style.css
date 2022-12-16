@@ -1,0 +1,593 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins:wght@200,300,400,500,600,700,800&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrate',sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+header{
+    display: flex;
+    position: fixed;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 7px 35px;
+}
+header.sticky{
+    padding: 5px 100px;
+    border-bottom: 1px solid #1ac008;
+    opacity: 0.7;
+}
+header .logo{
+    transition: 0.6s;
+    width: 100px;
+    height: 50px;
+    margin-top: 15px;
+    justify-content: center;
+    transition: 0.6s;
+}
+header ul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+header ul li {
+    position: relative;
+    list-style: none;
+}
+header ul li a {
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #9a07b0;
+    letter-spacing: 2px;
+    font-weight: 500px;
+    transition: 0.6s;
+}
+header a:hover{
+    border-bottom: 2px solid #ff0000;
+}
+
+header.sticky .logo,
+header.sticky ul li a {
+    color: #1ac008;
+    width: 110px;
+    height: 55px;
+}
+/*End of header*/
+.hero-purple{
+    color: #9a07b0;
+}
+.hero-red{
+    color: #ff0000;
+}
+.hero{
+    width: 100%;
+    height: 100vh;
+    padding: 0 40px;
+  
+}
+.hero-header{
+    padding-top: 200px;
+}
+ .hero-header-text{
+    font-family:'Montserrat' sans-serif;
+    font-size: 42px;
+    line-height: 1;
+    transition: all 300ms ease;
+}
+.hero-header-text, p{
+    text-align: left;
+}
+.hero-text{
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: left;
+}
+.btn{
+    cursor: pointer;
+    display: inline-block;
+    border: 0;
+    font-weight: 200;
+    padding: 10px 20px;
+    background: #9a07b0;
+    color: #fff;
+    font-size: 15px;
+}
+
+.btn:hover{
+    background: #ac56b9;
+  
+}
+.hero-container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.hero-bg-image{
+
+    background-position: center;
+    background-size: cover;
+    margin-right: 100px;
+
+}
+.hero-bg-image img{
+    margin-top: 5px;
+    width: 23vw;
+    min-height: 10vh;
+}
+
+.hero{
+    padding: 10px 40px;
+}
+/*
+Offers
+*/
+.offers{
+    margin-top: 20px;
+ 
+}
+
+.offers .offer-header{
+   text-align: center;
+   justify-content: center;
+   color: #fff;
+}
+.offer-container {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content:space-around;
+    margin-top: 20px;
+    line-height: 1.2;
+    background-color: #9a07b0;
+    width: 1260px;
+    height: 150px;
+
+}
+
+.offer-card1 p{
+    text-align: center;
+    color: #fff;
+    padding-top: 7px;
+}
+.offer-card1 h1{color: #fff;}
+
+.offer-card2 p{
+    text-align: center;
+    color: #fff;
+    padding-top: 7px;
+}
+.offer-card2 h1{color: #fff;}
+.offer-card3 p{
+    text-align: center;
+    color: #fff;
+    padding-top: 7px;
+}
+.offer-card3 h1{color: #fff;}
+
+/*
+* Ethical section
+*/
+.ethical-container{
+    display: flex;
+    align-content: center;
+    justify-content:center;
+}
+.ethical-text  {
+    width: 450px;
+    height: 250px;
+    color: #000;
+    text-align: center;
+    padding: 35px 20px;
+
+}
+.ethical-text p{
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Montserrat',sans-serif;
+    padding-top: 10px;
+    line-height: 1.7;
+}
+.ethical-header-text{
+    color: #ff0000;
+}
+
+
+.ethical-image{
+    background: url(/images/ethic.webp);
+    background-position: center;
+    background-size: cover;
+    width: 400px;
+    height: 250px;
+}
+.ethical{
+    margin-top: 10px;
+}
+
+/*How it works*/
+.how-it-work-container img{
+    width: 1260px;
+    height: 150px;
+    margin-top: 15px;
+}
+.how-it-work{
+    margin-top: 20px;
+}
+.how-it-work, h2{
+    text-align: center;
+}
+
+
+.how-container{
+    display: flex;
+    justify-content: space-between;
+   align-items: center;
+}
+.how-container p{
+    text-align: center;
+}
+.how-container h1{
+    text-align: center;
+}
+.how-card1  {
+    font-family: 'Montserrat',sans-serif;
+    font-size: 14px;
+    width: 300px;
+    height: 150px;
+    justify-content: center;
+    text-align: center;
+    padding: 10px 20px;
+    line-height: 1.2;
+}
+
+.how-card2 {
+    font-family: 'Montserrat',sans-serif;
+    font-size: 14px;
+    width: 300px;
+    height: 150px;
+    justify-content: center;
+    text-align: center;
+    padding: 10px 20px;
+    line-height: 1.2;
+}
+
+.how-card3 {
+    font-family: 'Montserrat',sans-serif;
+    font-size: 14px;
+    width: 300px;
+    height: 150px;
+    justify-content: center;
+    padding: 10px 20px;
+    line-height: 1.2;
+}
+
+/*Footer*/
+
+.footer-container{
+    width: 1260px;
+    height: 250px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+  
+    background: #9a07b0;
+}
+
+.footer-sect1{
+    width: 400px;
+    height: 250px;
+    line-height: 1.5;
+    padding: 10px 25px;
+    font-weight: 200;
+    color: #c0c0c0;
+    opacity: 0.9;
+}
+
+
+.footer-sect2{
+    width: 350px;
+    height: 250px;
+    line-height: 1.5;
+    color: #c0c0c0;
+    padding: 10px 25px;
+    opacity: 0.9;
+}
+
+.footer-sect3{
+    width: 350px;
+    height: 250px;
+    color: #c0c0c0;
+    line-height: 1.5;
+    padding: 10px 25px;
+    opacity: 0.9;
+}
+
+footer a {
+    color: #000;
+    font-weight: 200;
+    text-decoration: none;
+    color: #c0c0c0;
+}
+footer li{
+    list-style: none;
+}
+.footer-sect4{
+    width: 350px;
+    height: 250px;
+    line-height: 1.5;
+    padding: 10px 25px;
+    opacity: 0.9;
+    color: #c0c0c0;
+}
+.footer-header{
+    color: #000;
+}
+.copy-right{
+    width: 1260px;
+    height: 45px;
+    background: #4d0a58;
+    text-align: center;
+    padding: 15px;
+    color: #c0c0c0;
+    font-family: 'Montserrat',sans-serif;
+    opacity: 0.9;
+    font-size: 14px;
+}
+
+/***
+Progress Button
+*/
+#progress{
+    
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    height: 60px;
+    width: 60px;
+    display: none;
+    place-items: center;
+    border-radius: 50%;
+    box-shadow: 0 0 10px  rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    z-index: 100000;
+}
+#progress-value{
+    display: block;
+    height: calc(100% - 15px );
+    width: calc(100% - 15px );
+    background-color: #fff;
+    border-radius: 50%;
+    display: grid ;
+    place-items: center;
+    font-size: 35px;
+    color: #1ac008;
+}
+/*Floating Contact Form Starts Here*/
+.floating-contact-form .contact-icon{
+    position: fixed;
+    bottom: 1px;
+    right: 50px;
+    z-index: 100000;
+    cursor: pointer;
+    padding: 16px;
+}
+.floating-contact-form .contact-icon i{
+   font-size: 52px;
+   color: #A47786;
+   transition: all 300ms;
+}
+.floating-contact-form .contact-icon i:hover{
+    transform: scale(1.1);
+ }
+ .floating-contact-form .form-container{
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    padding: 24px 36px;
+    width: 460px;
+    font-family: 'Montserrate',sans-serif;
+    box-shadow: 0 10px 50px rgba(0, 0, 0, 0.1);
+    border-radius: 24px;
+    transform: rotateZ(-6deg);
+    transform-origin: bottom right;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 500ms ease;
+ }
+ .floating-contact-form .form-container.active {
+    transform: rotateZ(0deg);
+    opacity: 1;
+    pointer-events: auto;
+ }
+ .floating-contact-form *{
+    box-sizing: border-box;
+ }
+ .floating-contact-form h3 {
+    font-size: 30px;
+    color: #9a07b0;
+    margin-top: 10px;
+    position: relative;
+ }
+ .floating-contact-form h3::after{
+    content: "";
+    height: 3px;
+    width: 36px;
+    background: #ef233c;
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+ }
+ .floating-contact-form form input[type='text'],
+ .floating-contact-form form textarea {
+    width: 100%;
+    padding: 14px 32px;
+    padding-left: 40px;
+    font-size: 14px;
+    border: 1px solid rgba(0, 47, 73, 0.3 );
+    border-radius: 8px;
+    color: #003049;
+    margin-bottom: 5px;
+ }
+ .floating-contact-form form input:focus,
+ .floating-contact-form form textarea:focus
+ {
+    outline: none;
+ }
+
+ .floating-contact-form .field-container {
+    position: relative;
+ }
+ .floating-contact-form .field-container label {
+    position: absolute;
+    top: 16px;
+    left: 40px;
+    color: #003049;
+    border-left: 8px solid #fff;
+    border-right: 8px solid #fff;
+    transition: all 300ms ease;
+    pointer-events: none;
+ }
+ .floating-contact-form .field-container label.active {
+   font-size: 13px;
+   background: #ef233c;
+   color: #fff;
+   padding: 2px 16px;
+   top: -8px;
+   left: 24px;
+   font-weight: bold;
+ }
+ .floating-contact-form .field-container i {
+    position: absolute;
+    top: 16px;
+    left: 12px;
+    color:#ff0000;
+ }
+ .floating-contact-form form textarea {
+    height: 150px;
+    resize: none;
+ }
+ .floating-contact-form form input[type='submit']{
+    border: none;
+    background: #9a07b0;
+    color: #fff;
+    padding: 16px 32px;
+    width: 100%;
+    border-radius: 24px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 500ms ease;
+ }
+ .floating-contact-form form input[type='submit']:hover{
+    background: #ac56b9;
+ }
+@media screen and (max-width:500px){
+    header a{
+        display: flex;
+        justify-content:center
+    }
+    .hero-header-text, p{
+        font-size: 32px ;
+        font-family: 'Montserrat',sans-serif;
+    }
+    .hero-bg-image {
+        width: 3rem;
+        margin-right: 50px;
+    }
+    .offer-container {
+        display: grid;
+        justify-content: center;
+        grid-template-rows: 1fr 1fr 1fr;
+        width: auto;
+        height: 300px;
+    }
+    .offer-container h1{
+        font-size: 18px ;
+        font-family: 'Montserrat',sans-serif;
+    }
+    .offer-container p{
+        font-size: 16px ;
+        font-family: 'Montserrat',sans-serif;
+    }
+    .ethical-container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .ethical-text h1{
+        font-size: 24px;
+        font-family: 'Montserrat',sans-serif;
+    }
+    .ethical-text p{
+        font-size: 14px;
+        font-family: 'Montserrat',sans-serif;
+    }
+    .ethical-image{
+       width: auto;
+    }
+ 
+  .how-it-work-container{
+    display: none;
+    padding: 0;
+    padding-bottom: 15px;
+  }
+  .how-container{
+  display: grid;
+  justify-content: center;
+  }
+  .how-card1{
+    height: 90px;
+  }
+ 
+  .how-card2{
+    height: 90px;
+  }
+  .how-card3{
+    height: 90px;
+  }
+  p{
+    font-size: 16px;
+    text-align: center;
+  }
+  h1{
+    font-size: 18px;
+  }
+ 
+  .footer-container{
+    display: grid;
+    margin-top: 160px;
+    width: 380px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 45px;  
+}
+
+.footer-sect1{
+    width: 300px;
+    height: 120px;
+}
+.footer-sect2{
+    width: 300px;
+    height: 120px;
+}
+.footer-sect3{
+    width: 300px;
+    height: 120px;
+}
+.footer-sect4{
+    width: 300px;
+    height: 130px;
+}
+.copy-right{
+    display: none;
+}
+}
